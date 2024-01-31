@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css">
+    <title>ItsFactDude-FactKiDuniya</title>
+</head>
+<body>
+    <div class="header">
+        <center><h1>Website_name</h1></center><br />
+        <center><h4>caption</h4></center>
+        <a href="index.html"><p id="r">lgin</p></a>
+    </div>
+    <div class="navbar">
+        
+        <a href="index.html"><div class="nav">login</div></a>
+        <div class="nav">PHP</div>
+        <div class="nav">PYTHON</div>
+        <div class="nav">HTML</div>
+        <div class="nav">CSS</div>
+    </div>
+    <div class="container">
+
+    </div>
+    <div class="sub_footer">
+        <div class="side">Useful Links</div>
+        <div class="line"></div>
+    </div>
+    <div class="footer">
+        <h5>Copyright © 2023 ItsFactDude. All rights reserved.</h5>
+    </div>
+
+
+
+    <a href="#" class="push">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="https://kit.fontawesome.com/0d47ff14f6.js" crossorigin="anonymous"></script>
+
+    <script>
+        const pushTop = document.querySelector(".push");
+
+        window.addEventListener("scroll", () => {
+            if(window.pageYOffset>100){
+                pushTop.classList.add("active");
+            }else{
+                pushTop.classList.remove("active");
+            }
+        })
+    </script>
+</body>
+</html>

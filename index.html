@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>login</title>
+    <script src="https://kit.fontawesome.com/df33a5f91c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">SIGN UP</h1>
+            <form action="">
+                <div class="input-grp">
+                    <div class="inp-field" id="name">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    
+                    <div class="inp-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="name" placeholder="Email" id="user">
+                    </div>
+                    
+                    <div class="inp-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="password" placeholder="Password" id="pass">
+                    </div>
+                    <p><a href="">Forgot Password</a></p>
+                </div>
+                <div class="but">
+                    <button type="button" id="signup" >Sign up</button>
+                    <button type="button" id="signin" class="disable" >Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        
+        let signup = document.getElementById("signup");
+        let signin = document.getElementById("signin");
+        let name = document.getElementById("name");
+        let title = document.getElementById("title");
+        
+        signin.onclick = function() {
+            let user = document.getElementById("user").value;
+            let pass = document.getElementById("pass").value;
+            if(user==="sai" && pass==="123"){
+                window.location.href="dashboard.html";
+            }
+            name.style.maxHeight = "0";
+            title.innerHTML = "SIGN IN";
+            signup.classList.add("disable");
+            signin.classList.remove("disable");
+            
+        }
+
+        signup.onclick = function() {
+            name.style.maxHeight = "60px";
+            title.innerHTML = "SIGN UP";
+            signup.classList.remove("disable");
+            signin.classList.add("disable");
+        }
+
+
+    </script>
+</body>
+</html>
